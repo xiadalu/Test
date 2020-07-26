@@ -20,7 +20,7 @@
     UIView* v = [[NSBundle mainBundle] loadNibNamed:@"CustomView" owner:self options:nil].lastObject;
     [self.view addSubview:v];
     
-    
+    UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
 }
 
 
