@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIView* v = [[NSBundle mainBundle] loadNibNamed:@"CustomView" owner:self options:nil].lastObject;
+    [self.view addSubview:v];
+    
+    
 }
 
 
